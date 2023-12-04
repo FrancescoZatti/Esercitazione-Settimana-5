@@ -31,10 +31,12 @@ $fs-decimals: 0.4 0.5 0.6 0.7 0.8 0.9;
 
 .header {
     background-color: rgb(33, 37, 41, 0.5);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5) 79%);
     position: sticky;
     top: 0;
     backdrop-filter: blur(4px);
     z-index: 3;
+
 }
     
 .nav-link {
@@ -171,4 +173,22 @@ h1 {
     }
     
   }
+}
+
+//PAGINA PROFILO
+
+.main-profile {
+    width: 50%;
+    margin-left: 30%;
+    margin-right: 20%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.dati-personali {
+    flex-direction: column;
+}
+
+.sezioni-profilo {
+    font-weight: 300;
 }

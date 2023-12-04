@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body class="general bg-dark ps-4">
+    <header class="header pe-5"> <!--Qui c'è la navbar-->
+        <nav class="navbar navbar-expand-lg bg-body-dark">
+            <div class="navbar-container container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="Netflix-assets/assets/netflix_logo.png" alt="Bootstrap" width="100">
+                </a>
+                <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-white" href="#">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Recently Added</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-white" href="#">My List</a>
+                        </li>
+                    </ul>
+                    <!--<form class="d-flex" role="search">
+                        
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>-->
+                    <div class="text-white d-flex align-items-center">
+                        <div class="d-inline-block">
+                            <i class="nav-bi bi bi-search"></i>
+                            <input type="search" placeholder="Search" class="bg-transparent border-0 text-white text-uppercase ms-2" style="width: 80px;">
+                        </div>
+                        <i class="nav-bi bi bi-bell-fill"></i>
+                        <div class="btn-group ms-3">
+                            <img src="Netflix-assets/assets/avatar.png" alt="profile-pic" width="40">
+                            <button type="button" class="btn text-white dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropstart</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end bg-dark">
+                                <li><a class="dropdown-item" href="#">View Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                                <li><a class="dropdown-item mt-2 border-top border-secondary" href="#">Log Out</a></li>
+                              </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main ps-2 pe-5 mt-3"> <!--Qui ci sono i caroselli-->
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <h1 id="main-title" class="text-white me-5 fw-semibold">TV Shows</h1>
+                <div>
+                    <select aria-placeholder="Genres" name="genres" class="selector bg-dark text-white fw-semibold">
+                        <option value="" disabled selected hidden>Genres</option>
+                        <option class="selector-option" value="Action">Action</option>
+                        <option class="selector-option" value="Horror">Horror</option>
+                        <option class="selector-option"value="Teendrama">Teendrama</option>
+                        <option class="selector-option" value="Crime">Crime</option>
+                    </select>
+                </div>               
+            </div>
+            <form class="d-flex">
+                <div class="radio-selection border border-secondary">
+                    <input type="radio" id="option1" name="options" value="option1" class="d-none">
+                    <label for="option1" class="radio-icon-label text-secondary">
+                        <i class="bi bi-list mx-3"></i>
+                    </label>
+                  </div>                  
+                  <div class="radio-selection border border-secondary">
+                    <input type="radio" id="option2" name="options" value="option2" class="d-none">
+                    <label for="option2" class="radio-icon-label text-secondary">
+                        <i class="bi bi-grid-fill mx-3"></i>
+                    </label>
+                  </div>
+            </form>
+        </div>
+        <!--DA QUI INIZIANO I CAROSELLI-->
+        <div class="mt-4 mx-3"> <!--Trending Now-->
+            <h2 class="text-white mb-0 fs-4">Trending Now</h2>
+            <div class="wrapper"> <!--PRIMO CAROSELLO-->
+                <section id="section1">
+                <a href="#section2">‹</a>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media0.webp" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media1.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media2.webp" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media3.webp" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media4.jpg" alt="Describe Image">
+                    </div>
+                <a href="#section2">›</a>
+                </section>
+                <section id="section2">
+                <a href="#section1">‹</a>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media5.webp" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media6.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media7.webp" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media8.webp" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media9.jpg" alt="Describe Image">
+                    </div>
+                <a href="#section1">›</a>
+                </section>
+            </div>
+        </div>
+        <div class="mt-4 mx-3"> <!--Watch It Again-->
+            <h2 class="text-white mb-0 fs-4">Watch It Again</h2>
+                <div class="wrapper"> <!--SECONDO CAROSELLO-->
+                    <section id="section3">
+                    <a href="#section4">‹</a>
+                        <div class="item">
+                        <img src="Netflix-assets/assets/media/media10.jpg" alt="Describe Image">
+                        </div>
+                        <div class="item">
+                        <img src="Netflix-assets/assets/media/media11.jpg" alt="Describe Image">
+                        </div>
+                        <div class="item">
+                        <img src="Netflix-assets/assets/media/media12.jpg" alt="Describe Image">
+                        </div>
+                        <div class="item">
+                        <img src="Netflix-assets/assets/media/media13.jpg" alt="Describe Image">
+                        </div>
+                        <div class="item">
+                        <img src="Netflix-assets/assets/media/media14.webp" alt="Describe Image">
+                        </div>
+                    <a href="#section4">›</a>
+                    </section>
+                    <section id="section4">
+                    <a href="#section3">‹</a>
+                        <div class="item">
+                        <img src="Netflix-assets/assets/media/media15.jpg" alt="Describe Image">
+                        </div>
+                        <div class="item">
+                        <img src="Netflix-assets/assets/media/media16.webp" alt="Describe Image">
+                        </div>
+                        <div class="item">
+                        <img src="Netflix-assets/assets/media/media17.jpg" alt="Describe Image">
+                        </div>
+                        <div class="item">
+                        <img src="Netflix-assets/assets/media/media18.jpg" alt="Describe Image">
+                        </div>
+                        <div class="item">
+                        <img src="Netflix-assets/assets/media/media19.webp" alt="Describe Image">
+                        </div>
+                    <a href="#section3">›</a>
+                    </section>
+                </div>
+        </div>
+        <div class="mt-4 mx-3"> <!--New Releases-->
+            <h2 class="text-white mb-0 fs-4">New Releases</h2>
+            <div class="wrapper"> <!--TERZO CAROSELLO-->
+                <section id="section5">
+                <a href="#section6">‹</a>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media20.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media22.webp" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media23.webp" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media24.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media25.webp" alt="Describe Image">
+                    </div>
+                <a href="#section6">›</a>
+                </section>
+                <section id="section6">
+                <a href="#section5">‹</a>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media26.webp" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media27.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media28.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media29.jpg" alt="Describe Image">
+                    </div>
+                    <div class="item">
+                    <img src="Netflix-assets/assets/media/media30.jpg" alt="Describe Image">
+                    </div>
+                <a href="#section5">›</a>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"> <!--Qui c'è il footer-->
+        <div class="row-1 d-flex">
+            <a href="#" class="bi-footer text-secondary px-2 me-1"><i class="fs-2 bi bi-facebook"></i></a>
+            <a href="#" class="bi-footer text-secondary px-2 me-1"><i class="fs-2 bi bi-instagram"></i></a>
+            <a href="#" class="bi-footer text-secondary px-2 me-1"><i class="fs-2 bi bi-twitter"></i></a>
+            <a href="#" class="bi-footer text-secondary px-2 me-1"><i class="fs-2 bi bi-youtube"></i></a>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <ul class="text-secondary list-unstyled ps-2">
+                    <li class="mb-2">
+                        <a class="li-footer fs-8" href="#">
+                            Audio and Subtitles
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="li-footer fs-8" href="#">
+                            Media Center
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="li-footer fs-8" href="#">
+                            Privacy
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="li-footer fs-8" href="#">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="text-secondary list-unstyled ps-2">
+                    <li class="mb-2">
+                        <a class="li-footer fs-8" href="#">
+                            Audio Description
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="li-footer fs-8" href="#">
+                            Investor Relations
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="li-footer fs-8" href="#">
+                            Legal Notices
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="text-secondary list-unstyled ps-2">
+                    <li class="mb-2">
+                        <a class="li-footer fs-8" href="#">
+                            Help Center
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="li-footer fs-8" href="#">
+                            Jobs
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="li-footer fs-8" href="#">
+                            Cookie Preferences
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="text-secondary list-unstyled ps-2">
+                    <li class="mb-2">
+                        <a class="li-footer fs-8" href="#">
+                            Gift Cards
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="li-footer fs-8" href="#">
+                            Terms of Use
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="li-footer fs-8" href="#">
+                            Corporate Information
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ms-2 mt-4">
+            <a class="service-code border border-secondary p-2 fs-8 text-decoration-none text-secondary" href="#">Service Code</a>
+        </div>
+        <div class="ms-2 mt-4">
+            <p class="text-secondary fs-8">
+                <i class="bi bi-c-circle fs-7"></i><span>1997-2019 Netflix, Inc. {i-0d00fcda2fdf9c0de}</span>
+            </p>
+        </div>
+    </footer>
+    <!--Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

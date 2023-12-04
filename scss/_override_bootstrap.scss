@@ -1,0 +1,174 @@
+@import '../Bootstrap/bootstrap-5.3.2/scss/functions';
+@import '../Bootstrap/bootstrap-5.3.2/scss/variables';
+
+//Modifiche funzioni
+
+//Fine modifiche funzioni
+
+//Modifiche variabili
+$fs-decimals: 0.4 0.5 0.6 0.7 0.8 0.9;
+
+@each $fs-decimal in $fs-decimals {
+  .fs-#{$fs-decimal * 10} {
+    font-size: #{$fs-decimal}rem;
+  }
+}
+
+.general {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.dropdown-menu {
+    a.dropdown-item {
+        color: #6c757d;
+      &:hover {
+        background-color: #6c757d;
+        color: #fff;
+      }
+    }
+  }
+
+.header {
+    background-color: rgb(33, 37, 41, 0.5);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(4px);
+    z-index: 3;
+}
+    
+.nav-link {
+    box-sizing: border-box;
+    &:hover {
+        font-weight: bold;
+        color: #fff;
+    }
+}
+
+.nav-bi {
+    padding: 0.5rem;
+    border-radius: 3rem;
+    &:hover {
+        background-color: #6c757d;
+    }
+}
+
+.main {
+    margin-bottom: 8rem;
+}
+  
+#main-title {
+    font-size: 2rem;
+}
+
+.selector {
+    padding: 0.5rem;
+    a.selector-option {
+        margin: 0.5rem;
+        &:hover {
+            background-color: #6c757d;
+        }
+    }
+}
+  
+
+.footer {
+    width: 50%;
+    margin: auto;
+}
+
+.bi-footer {
+    &:hover {
+        background-color: #D60B16;
+        color: #fff;
+    }
+}
+
+.li-footer {
+    text-decoration: none;
+    color: #6c757d;
+    &:hover {
+        color: #D60B16;
+    }
+}
+
+.service-code {
+    &:hover {
+        background-color: #D60B16;
+        color: #fff;
+        border-color: #fff;
+    }
+}
+
+//Fine modifiche variabili
+
+@import '../Bootstrap/bootstrap-5.3.2/scss/bootstrap.scss';
+
+//Carosello
+
+$itemGrow: 1.2;
+$duration: 250ms;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+h1 {
+  font-family: Arial;
+  color: red;
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,100%);
+  overflow:hidden;
+  scroll-behavior: smooth;
+
+  section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+    
+    .item {
+      padding: 0 2px;
+      transition: $duration all;
+      
+      &:hover { 
+        margin: 0 40px;
+        transform: scale(1.2);
+      }
+      
+    }
+    
+    a {
+      position: absolute;
+      color: #fff;
+      text-decoration: none;
+      font-size: 6em;
+      background:rgb(0,0,0);
+      width: 80px;
+      padding: 20px;
+      text-align: center;
+      z-index: 1;
+      
+      &:nth-of-type(1) {
+        top:0; bottom:0; left:0;
+        background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      }
+      &:nth-of-type(2) {
+        top:0; bottom:0; right: 0;
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      }
+      
+    }
+    
+  }
+}
